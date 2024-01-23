@@ -1,0 +1,25 @@
+<!-- product-create.component.html -->
+
+<div class="container mt-4">
+    <h2>Create Product</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="productName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="productName" [(ngModel)]="newProduct.name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="productPrice" class="form-label">Price</label>
+        <input type="number" class="form-control" id="productPrice" [(ngModel)]="newProduct.price" name="price" required>
+      </div>
+      <div class="mb-3">
+        <label for="productQuantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="productQuantity" [(ngModel)]="newProduct.quantity" name="quantity" required>
+      </div>
+      <div class="mb-3">
+        <label for="productAvailable" class="form-label">Available</label>
+        <input type="checkbox" class="form-check-input" id="productAvailable" [(ngModel)]="newProduct.available" name="available">
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+  

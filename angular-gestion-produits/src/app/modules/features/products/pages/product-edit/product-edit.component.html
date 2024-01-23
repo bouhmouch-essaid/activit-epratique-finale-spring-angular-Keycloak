@@ -1,0 +1,25 @@
+<!-- product-edit.component.html -->
+
+<div class="container mt-4">
+    <h2>Edit Product</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="editProductName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="editProductName" [(ngModel)]="editedProduct.name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="editProductPrice" class="form-label">Price</label>
+        <input type="number" class="form-control" id="editProductPrice" [(ngModel)]="editedProduct.price" name="price" required>
+      </div>
+      <div class="mb-3">
+        <label for="editProductQuantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="editProductQuantity" [(ngModel)]="editedProduct.quantity" name="quantity" required>
+      </div>
+      <div class="mb-3">
+        <label for="editProductAvailable" class="form-label">Available</label>
+        <input type="checkbox" class="form-check-input" id="editProductAvailable" [(ngModel)]="editedProduct.available" name="available">
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+  
