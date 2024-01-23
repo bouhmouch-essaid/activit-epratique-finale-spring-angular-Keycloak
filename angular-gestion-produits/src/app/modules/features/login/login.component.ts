@@ -19,7 +19,7 @@ export class LoginComponent {
     this.authService.login(this.username, this.password).subscribe(
       (success: any) => {
         if (success) {
-          this.router.navigate(['/products']);
+          this.router.navigate(['/home']);
         } else {
           this.errorMessage = 'Invalid username or password. Please try again.';
         }
