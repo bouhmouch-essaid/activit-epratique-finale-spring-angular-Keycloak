@@ -12,7 +12,7 @@ export class CommandeService {
   endpoint!: string;
 
   constructor(private apiHttp: ApiHttp) {
-    this.setEndpoint(`${API_END_POINT}/commades`);
+    this.setEndpoint(`http://localhost:8081/commades`);
   }
 
   setEndpoint(endpoint: string): void {

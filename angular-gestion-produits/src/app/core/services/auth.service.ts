@@ -11,7 +11,7 @@ export class AuthService {
   private endpoint!: string;
 
   constructor(private apiHttp: ApiHttp) {
-    this.setEndpoint(`${API_END_POINT}/login`);
+    this.setEndpoint(`http://localhost:9086/login`);
   }
 
   get isAuthenticated(): boolean {
