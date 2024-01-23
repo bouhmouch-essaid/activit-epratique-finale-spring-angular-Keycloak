@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20240123154353"
+  },
+  "clientRootFolder": "microCommande",
+  "databaseType": "mongodb",
+  "dto": "mapstruct",
+  "entityTableName": "commandes",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "customerRef",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productRef",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "microCommande",
+  "name": "Commandes",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

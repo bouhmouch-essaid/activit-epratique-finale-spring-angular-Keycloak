@@ -1,1 +1,16 @@
+<div class="cover-container d-flex p-3 mx-auto flex-column">
+  <header class="masthead">
+    <div class="inner">
+      <h3 class="masthead-brand">Gestion Products</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" [routerLink]="['/home']" [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="nav-link" [routerLink]="['/products']" [routerLinkActive]="'active'">Products</a>
+        <a class="nav-link" [routerLink]="['/commandes']" [routerLinkActive]="'active'">Commandes</a>
+      </nav>
+    </div>
+  </header>
+
+</div>
+
 <router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20240123154616"
+  },
+  "clientRootFolder": "microProduit",
+  "databaseType": "mongodb",
+  "dto": "mapstruct",
+  "entityTableName": "product",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "available",
+      "fieldType": "Boolean"
+    }
+  ],
+  "microserviceName": "microProduit",
+  "name": "Product",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,26 @@
+{
+  "annotations": {
+    "changelogDate": "20240123160935"
+  },
+  "clientRootFolder": "microProduit",
+  "databaseType": "mongodb",
+  "dto": "mapstruct",
+  "entityTableName": "customer",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "microProduit",
+  "name": "Customer",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

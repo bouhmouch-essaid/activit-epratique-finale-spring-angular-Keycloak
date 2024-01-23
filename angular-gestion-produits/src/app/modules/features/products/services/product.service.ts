@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ApiHttp } from '../../../../core/http';
 import { Product } from '../../../../shared/models/products.model';
+import { API_END_POINT } from '../../../../app.constants';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class ProductService {
   endpoint!: string;
 
   constructor(private apiHttp: ApiHttp) {
-    this.setEndpoint('http://localhost:3000/products');
+    this.setEndpoint(`${API_END_POINT}/products`);
   }
 
   setEndpoint(endpoint: string): void {
